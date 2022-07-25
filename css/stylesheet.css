@@ -1,0 +1,400 @@
+*
+{
+padding: 0;
+margin: 0;
+}
+
+
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
+}
+
+
+
+.navbar{
+
+      padding: 1rem;
+}
+
+
+.carousel-inner img{
+
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item h2 {
+      font-size: 80px;
+      font-family: UbuntuCondense,sans-serif;
+
+}
+
+.tours{
+    padding-top: 30px;
+
+}
+
+.features p{
+    font-family: OpenSans,sans-serif;
+    text-align:center;
+    font-size:18px;
+    color:black;
+    padding: 20px 100px 10px 100px;
+
+}
+
+
+.row p {
+      font-family: OpenSans,sans-serif;
+      text-align: justify;
+      color:black ;
+      font-size:18px;
+      padding-top: 10px;
+
+}
+
+.feature {
+      padding: 100px 0px;
+
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+
+
+.feature-img img {
+    width: 100%;
+
+}
+
+.price{
+      width: 50px;
+      height: 50px;
+      background: #ff5722;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 50%;
+      padding: 10px;
+      box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
+      position: absolute;
+      left: 10px;
+      bottom:  -30px;
+}
+
+.feature-img {
+      position: relative;
+      color: #FFA500;
+
+  }
+
+  .feature-img:hover {
+  -webkit-transform: scale(2, 2);
+  transform: scale(1.1, 1.1);
+}
+
+
+.rating {
+      padding: 3px;
+      float: right;
+      background: #fff;
+      bottom: -30px;
+      right: 0;
+      position:  absolute;
+}
+
+.feature .fa-solid{
+      font-size: 15px;
+      color: #ff5722;
+}
+
+.feature-details{
+      padding: 20px;
+      text-align: center;
+
+}
+
+.feature-details h4 {
+      font-weight: 600;
+      margin-top: 20px;
+      color: black;
+}
+
+
+
+.feature-details .bi {
+    font-size: 15px;
+    color: #ff5722;
+
+}
+
+.feature .feature-box {
+
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+
+.feature-box {
+
+  box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
+  margin-bottom: 30px;
+}
+
+
+.banner{
+
+
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+
+}
+
+.banner-highlights{
+      padding: 0px 0px;
+      background: rgba(0,0,0,0.7);
+      text-align: center;
+      color: #fff;
+}
+
+.booking-btn{
+      width: 120px;
+      padding: 8px 0px;
+      outline: none !important;
+      border: 2px solid #fff;
+      border-radius: 50px;
+      background: transparent;
+      color: #fff;
+      margin-top: 20px;
+      margin-bottom: 15px;
+
+}
+
+.book{
+
+      padding-left: 50px;
+}
+
+.book h1{
+
+      text-align: center;
+      padding-top: 0px;
+      font-family: UbuntuCondense,sans-serif;
+}
+
+
+.book .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  align-items: center;
+
+}
+
+.book .row .image{
+  flex:1 1 40rem;
+}
+
+.book .row .image img{
+  width:80%;
+}
+
+.book .row form{
+  flex:1 1 40rem;
+  padding:2rem;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  border-radius: .5rem;
+
+}
+
+.book .row form .inputBox{
+  padding:.5rem 0;
+}
+
+.book .row form .inputBox input{
+  width:100%;
+  padding:1rem;
+  border:.1rem solid rgba(0,0,0,.1);
+  font-size: 1.7rem;
+  color:#333;
+  text-transform: none;
+}
+
+.book .row form .inputBox h3{
+  font-size: 2rem;
+  padding:1rem 0;
+  color:#666;
+}
+
+.btn1{
+  display: inline-block;
+  margin-top: 1rem;
+  background:orange;
+  color:#efefef;
+  padding:.8rem 3rem;
+  border:.2rem solid yellow;
+  cursor: pointer;
+  font-size: 1.7rem;
+  float: left;
+  border-radius: 50px;
+}
+
+.btn1:hover{
+  background:red;
+  color:orange;
+}
+
+
+.footer{
+        padding: 100px 20px 20px;
+        background-image: linear-gradient(#2d557d,#9610fb);
+        color: #fff;
+        margin-top: 15px;
+
+}
+
+.footer h1{
+  font-family: MeriendaOne,sans-serif;
+  font-size: 30px;
+}
+
+.footer h4{
+
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 25px;
+
+}
+
+.footer p{
+
+  font-size: 12px;
+  text-align: justify;
+  padding-right: 35px;
+
+}
+
+.footer .row .fa{
+
+  font-size: 15px;
+  padding-right: 20px;
+
+}
+
+.footer .row .bi{
+
+  font-size: 15px;
+  padding-right: 20px;
+
+}
+
+.footer hr{
+
+  margin-top: 10px;
+  background: #efefef;
+
+}
+
+.footer .copyright{
+
+    text-align: center;
+}
+
+.footer img{
+
+    width: 100px;
+    height: 100px;
+
+}
+
+.inputBox{
+    font-weight: 12;
+    font-size: 25px;
+
+}
+
+
+.contact p{
+  font-family: UbuntuCondense,sans-serif;
+  text-align: center;
+  font-size: 50px;
+}
+
+.about{
+    padding: 20px 0;
+}
+.about p {
+    padding: 10px 100px 20px 100px;
+    text-align: center;
+}
+
+.user1{
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 100, 0.2);
+}
+
+.user1 h5{
+    padding: 15px 0px 5px 0px;
+}
+
+.about img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position:relative;
+    margin: 20px 40px -20px 40px;
+
+}
+
+.about img:hover{
+  -webkit-transform: scale(3, 3);
+  transform: scale(3, 3);
+}
+
+
+
+
+.heading{
+  font-family: UbuntuCondense,sans-serif;
+  text-align: center;
+  font-size: 50px;
+
+}
+.private{
+    background: #60d422;
+    padding: 5px 12px;
+    color: white;
+    font: 500 14px/1em "ciutadella";
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-right: 40px;
+}
+.tick-list{
+    list-style: none;
+    font-family: open sans,sans-serif;
+    padding: 0;
+    
+
+}
+.tick-list li{
+    padding-left: 26px;
+    margin: 0 3px 10px 0;
+    vertical-align: middle;
+    line-height: 1.5;
+    list-style: none;
+    background: url(images/blue-tick.png) no-repeat;
+
+}
+
+.card {
+    text-align: justify;
+}

@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WEB Pro Projct</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+<style>
+
+    @font-face {
+        font-family: MeriendaOne;
+        src: url("./fonts/MeriendaOne-Regular.ttf");
+              }
+
+    @font-face {
+        font-family: UbuntuCondense;
+        src: url("./fonts/UbuntuCondensed-Regular.ttf");
+              }
+
+    @font-face {
+        font-family: OpenSans;
+        src: url("./fonts/OpenSans-VariableFont_wdth,wght.ttf");
+            }
+
+  .hover-item {
+	background-color: inherit;
+}
+
+  .hover-item:hover {
+	background-color: inherit;
+  opacity: 75%
+}
+
+
+
+.whats-app {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    left: 15px;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+
+
+
+
+</style>
+
+
+
+  </head>
+
+
+  <body>
+    <!--nav bar-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container-fluid">
+  <img src="images/logo.JPG" alt="Paradise Island" height="60px" width="60px"><a class="navbar-brand" href="index.html" style="font-family: MeriendaOne,sans-serif;font-size: 30px;color:#fff;">Paradise Island</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.tripadvisor.com/SmartDeals-g293961-Sri_Lanka-Hotel-Deals.html" target="_blank">Hotels</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Tours </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="tours.html">Day1</a></li>
+          <li><a class="dropdown-item" href="tours.html">Day2</a></li>
+          <li><a class="dropdown-item" href="tours.html">Day3</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact us.html">Contact us</a>
+      </li>
+
+      <li><a href="https://www.facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+      </svg></a></li>
+      <li><a href="https://www.instagram.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+        </svg></a></li>
+
+      <li><a href="https://twitter.com/?lang=en" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+      </svg></a> </li>
+      <li><a href="https://www.youtube.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+      </svg></a></li>
+  </ul>
+
+
+  </div>
+</div>
+</nav>
+
+<!--end of nav bar-->
+
+<!-- slide image-->
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+<button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active">
+  <img src="images/lepord.jpg" class="d-block w-100" alt="Lepord Pic">
+  <div class="carousel-caption d-none d-md-block">
+    <h2>Astonishing wayfarers and nature</h2>
+
+  </div>
+</div>
+<div class="carousel-item">
+  <img src="images/galle.jpg" class="d-block w-100" alt="Galle Pic">
+  <div class="carousel-caption d-none d-md-block">
+    <h2>The Marine Angling And Trawling Vision</h2>
+
+  </div>
+</div>
+<div class="carousel-item">
+  <img src="images/sigiriya.jpg" class="d-block w-100" alt="Sigiriya pic">
+  <div class="carousel-caption d-none d-md-block">
+    <h2>The Eighth Wonder of Asia</h2>
+
+  </div>
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+<!--end slide image-->
+<!--block-->
+
+<div class="row g-0 position-relative" style="background:#dad7cd" >
+  <div class="col-md-6 mb-md-0 p-md-4">
+    <img src="images/asia.jpg" class="w-100" alt="Srilanka" style="padding-top: 20px;" width="100%" height="95%">
+  </div>
+  <div class="col-md-6 p-4 ps-md-0">
+    <h5 class="mt-0" style="color:Black; font-size:40px; font-family:UbuntuCondense,Serif;">ABOUT SRILANKA</h5>
+    <p>"Wonder of Asia", to use figurative language However, that is exactly what this little island in the Indian Ocean means! One with wanderlust will find beautiful beaches, exciting animal preserves, and historic cities with enchanting remnants. Sri Lanka, which has appeared in history books under a variety of names, is the ideal tropical hideaway and might provide the ultimate vacation. The island is a must-visit location because it is a blend of cultures, offering the best in unique cuisine and a fascinating history dating back more than three thousand years. The kindness of the inhabitants is unmatched, and they always smile. You'll feel at ease right away! Need a change of scenery? Take a beautiful trip to the green hills that tower throughout the island.for a breath of fresh air while the bustling capital has much more to offer than the tropical heat. If you want to go snorkeling amid gorgeous reefs or just lay out in the sun, the sandy, bronze beaches along with the azure waters offer the greatest of water activities. However, there is much more where that came from. A history buff's inner historian would be piqued by the numerous ancient ruins that dot the region. An undeniable treasure trove packed with excitement. Come explore the Indian Ocean's jewel and uncover the secrets of the tropics.</p>
+
+  </div>
+</div>
+
+<!-- enf of block-->
+
+<!--card-->
+<section class="features">
+  <h1 style="font-family:UbuntuCondense,sans-serif; color:black;font-size:50px; "> Top Featured Destinations </h1>
+  <p>One's heart is captured by Sri Lanka, a diverse country with a wide variety of fauna, adventure activities including trekking expeditions, air and ocean travel, and salty blue waterways.</p>
+<div class="container">
+<div class="row">
+  <div class="col-md-4">
+    <a href="tours.html"><div class="feature-box">
+    <div class="feature-img">
+    <img src="images/2.jpg" alt="...">
+    <div class="price">
+      <h5>30%</h5>
+    </div>
+    <div class="rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star-half-stroke"></i>
+    </div>
+    </div>
+    <div class="feature-details">
+        <h4>Wild Safaries</h4>
+        <div>
+          <span><i class="bi bi-geo-alt"></i> Wild Safaries</span>
+          <span><i class="bi bi-brightness-high"></i> 3 Days</span>
+          <span><i class="bi bi-moon"></i> 4 Nights</span>
+        </div>
+    </div>
+  </div></a>
+  </div>
+  <div class="col-md-4">
+    <a href="tours.html"><div class="feature-box">
+    <div class="feature-img">
+    <img src="images/6.jpg" alt="...">
+    <div class="price">
+      <h5>30%</h5>
+    </div>
+    <div class="rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star-half-stroke"></i>
+    </div>
+    </div>
+    <div class="feature-details">
+        <h4>Srilanka Highlights</h4>
+        <div>
+          <span><i class="bi bi-geo-alt"></i> Srilanka Highlights</span>
+          <span><i class="bi bi-brightness-high"></i> 3 Days</span>
+          <span><i class="bi bi-moon"></i> 4 Nights</span>
+        </div>
+    </div>
+  </div></a>
+  </div>
+  <div class="col-md-4">
+    <a href="tours.html"><div class="feature-box">
+    <div class="feature-img">
+    <img src="images/5.jpg" alt="...">
+    <div class="price">
+      <h5>30%</h5>
+    </div>
+    <div class="rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star-half-stroke"></i>
+    </div>
+    </div>
+    <div class="feature-details">
+        <h4>Sea and Ride</h4>
+        <div>
+          <span><i class="bi bi-geo-alt"></i> Sea and Ride</span>
+          <span><i class="bi bi-brightness-high"></i> 3 Days</span>
+          <span><i class="bi bi-moon"></i> 4 Nights</span>
+        </div>
+    </div>
+  </div></a>
+  </div>
+</div>
+</div>
+</section>
+<!--end of card -->
+
+<!--tours grid-->
+<div class="tours">
+<h1 style="text-align:center; font-size:50px; color:black;font-family:UbuntuCondense,Serif;">Gallery<h1/>
+
+</div>
+
+<div class="row " style="padding:20px 70px 0px 70px">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 ">
+    <img
+      src="images/2.jpg"
+      class="w-100  shadow-1-strong rounded mb-4 hover-item"
+      alt="Boat on Calm Water"/>
+
+    <img
+      src="images/3.jpg"
+      class="w-100 shadow-1-strong rounded mb-4 hover-item"
+      alt="Wintry Mountain Landscape"/>
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="images/4.jpg"
+      class="w-100 shadow-1-strong rounded mb-4 hover-item"
+      alt="Mountains in the Clouds"/>
+
+    <img
+      src="images/5.jpg"
+      class="w-100 shadow-1-strong rounded mb-4 hover-item"
+      alt="Boat on Calm Water"/>
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="images/6.jpg"
+      class="w-100 shadow-1-strong rounded mb-4 hover-item"
+      alt="Waves at Sea"  />
+
+    <img
+      src="images/7.jpg"
+      class="w-100 shadow-1-strong rounded mb-4 hover-item"
+      alt="Yosemite National Park"/>
+  </div>
+</div>
+
+
+<!--end of tours grid-->
+
+
+<!--book now -->
+
+<div class="banner">
+  <div class="banner-highlights"><video src="images/vid-2.mp4" style="width:100%" loop autoplay muted></video>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2> Hurry up and get discounts!</h2>
+          <h5>Limited offer !!! Don't miss your chance..</h5>
+        </div>
+          <div class="col-md-4">
+            <a href="booknow.html"><button type="button" class="booking-btn">Book Now</button></a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end of book now -->
+
+<!-- Footer -->
+<div class="footer">
+  <div class="container">
+  <div class="row">
+      <div class="col-md-3">
+      <h1>Paradise Island</h1>
+      <img src="images/logo.JPG">
+      </div>
+      <div class="col-md-3">
+        <h4>Features</h4>
+        <p>Deals & Offers</p>
+        <p>Customer Reviews</p>
+        <p>Cancelation Policies</p>
+      </div>
+      <div class="col-md-3">
+        <h4>Quick Contact</h4>
+        <p><i class="fa fa-phone-square" ></i> +8175-681-6334</p>
+        <p><i class="fa fa-envelope" ></i> admissions@kcg.edu</p>
+        <p><i class="fa fa-home" ></i> 7 Tanaka Monzencho, Sakyo-ku, Kyoto 606-8225</p>
+      </div>
+      <div class="col-md-3">
+        <h4>Follow Us on</h4>
+        <p><i class="bi bi-facebook" ></i> Facebook</p>
+        <p><i class="bi bi-youtube" ></i> YouTube</p>
+        <p><i class="bi bi-instagram" ></i> instagram</p>
+        <p><i class="bi bi-twitter" ></i> Twitter</p>
+      </div>
+  </div><hr/>
+  <p class="copyright">© 2022 Copyright: Group WEBpro</p>
+  </div>
+</div>
+
+
+<!--end of footer-->
+
+<div>
+<a  class="whats-app" href="#" target="_blank">
+    <i class="bi bi-whatsapp my-float"></i>
+</a>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
